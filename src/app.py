@@ -1,5 +1,5 @@
-from sample_app.config.settings import settings
-from sample_app.domain.service import GreetingService
+from src.config.settings import settings
+from src.domain.service import GreetingService
 
 
 def main():

@@ -1,3 +1,3 @@
-from sample_app import __main__
+from src.app import main
 if __name__ == "__main__":
     main()
