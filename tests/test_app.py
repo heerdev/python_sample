@@ -1,6 +1,5 @@
-from src.domain.service import GreetingService
-
+from sample_app.domain.service import GreetingService
 
 def test_greet():
-    service = GreetingService()
-    assert service.greet("TestApp") == "Hello from TestApp 👋"
+ service = GreetingService()
+ assert service.greet("TestApp") == "Hello, TestApp!"

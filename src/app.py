@@ -1,8 +1,10 @@
-from src.config.settings import settings
-from src.domain.service import GreetingService
+from fastapi import FastAPI
+from .controllers.hello_controller import router as hello_router
+
+app = FastAPI(title="Sample Python App")
+app.include_router(hello_router)
 
 
 def main():
-    service = GreetingService()
-    message = service.greet(settings.app_name)
-    print(message)
+	import uvicorn
+	uvicorn.run(app, host="127.0.0.1", port=8000)
