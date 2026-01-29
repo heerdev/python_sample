@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "sample-python-app"
+version = "0.1.0"
+description = "Spring-style Python project"
+packages = [{ include = "sample_app", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.6"
+pydantic-settings = "^2.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+
+[tool.poetry.scripts]
+sample_app = "sample_app.app:main"
