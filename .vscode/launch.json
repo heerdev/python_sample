@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+    {
+      "name": "Run Sample App (Poetry)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true,
+      "python": "${workspaceFolder}/.venv/bin/python"
+    }
+    ]
+}

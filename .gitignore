@@ -126,7 +126,7 @@ dmypy.json
 poetry.lock
 
 # IDE
-.vscode/
+
 .idea/
 *.swp
 *.swo
